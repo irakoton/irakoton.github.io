@@ -3,7 +3,8 @@
 }
 
 .my-paragraph {
-    font-size: 17px;
+  font-size: 17px;
+  text-align: justify;
 }
 
 .my-tool {
@@ -65,6 +66,19 @@
     }
 }
 
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .mybtn-group{
     text-align: left;
     margin-bottom: 7px;
@@ -72,3 +86,134 @@
 }
 
 .puzzle-btns { width: 100% }
+
+
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+div.paper {
+  background-color: rgb(243, 240, 240);
+  padding: 10px;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 5px;
+  margin-bottom: 4px;
+  margin-top: 0.2em;
+  transition: all 1s;
+  box-shadow: 0 3px 2px rgba(52, 52, 52, 0.08);
+  width: 100%;
+}
+
+div.paper:hover {
+  box-shadow: 0 4px 3px rgba(32, 32, 32, 0.08);
+  border-color: rgb(166, 166, 166);
+  background-color: #fff;
+}
+
+div.paper p {
+  /* font-size: smaller; */
+  color: #000;
+  margin: 3px;
+}
+
+div.paper p.conference {
+  color: rgb(116, 114, 114);
+}
+
+div.paper h3.title {
+  color: #4076B3;
+  font-style: normal;
+  font-weight: normal; 
+  font-size:24px;
+}
+
+div.paper span.conftype {
+  color: #fff;
+  background-color: #34A5DA;
+  border-radius: 5px;
+  /* border: 1px solid #94D9F6; */
+  border: 3px solid #34A5DA;
+  font-style: italic;
+  opacity: 0.6;
+  font-size: smaller;
+}
+
+div.paper h3.title2 {
+  color: #4C8945;
+  font-style: normal;
+  font-weight: normal; 
+  font-size:24px;
+}
+
+div.paper span.conftype2 {
+  color: #fff;
+  background-color: #8ABE5E;
+  border-radius: 5px;
+  /* border: 1px solid #94D9F6; */
+  border: 3px solid #8ABE5E;
+  font-style: italic;
+  opacity: 0.6;
+  font-size: smaller;
+}
+
+div.files {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+div.files a, button {
+  transition: all 0.2s;
+  border: 1px;
+  border-radius: 5px;
+  padding: 4px;
+  margin-right: 5px;
+  background: #bec3c7;
+  color: #f0f6fb;
+  font-size: smaller;
+}
+
+div.files a:hover, button:hover {
+  background: #95bcda;
+  box-shadow: 0 2px 1px rgba(52, 52, 52, 0.08);
+}
+
+
+/* for the bibtex "copied" button */
+.visuallyhidden{position:absolute;clip:rect(1px,1px,1px,1px)}
+.copybutton{
+  background-color:#fff;
+  border:0;
+  outline:0;
+  cursor:pointer;
+  opacity:1;
+  position:absolute;
+  width:40px;
+  height:40px;
+  z-index:9;
+  border-radius:24px
+}
+.button-tooltip-container {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    min-height: 30px;
+}
+
+#custom-tooltip {
+    display: none;
+    margin-left: 5px;
+    /* padding: 5px 12px; */
+    /* background-color: #000000df; */
+    border-radius: 4px;
+    color: #32547a;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+}
