@@ -9,20 +9,50 @@
 
     <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
       <div class="resume-content">
-        <h3 class="mb-0"><img src="img/deepsec-logo.png" alt="logo" height="30" style="margin-bottom:7px"><span style="margin-left:20px">The DeepSec prover</span></h3>
+        <h3 class="mb-0"><img src="img/tidy-logo.png" alt="logo" height="30" style="margin-bottom:7px"><span
+            style="margin-left:20px">Tidy prover</span></h3>
+        <div class="subheading mb-3">A verification front-end for systems with quantitative values</div>
+        <button onclick="toggleswitch('Tidy-par')">Show / Hide</button>
+        <p class="my-paragraph" id="Tidy-par" style="display:none">
+          <a href="https://gitlab.com/irakoton/tidy-automation">Tidy</a> was initially the name of a framework
+          introduced in <a href="docs/22-ccs.pdf">one of my publications</a>, to specify security protocols whose
+          security relies on time-based mechanisms (timeouts, verifiable delay functions...). I have been working on a
+          tool based on these contributions during my post-doc at the Max-Planck Institute, and now develop and maintain
+          it as a personal project.
+          <br>
+          <br>
+          The tool acts as a front-end to the <a href="https://tamarin-prover.com/">Tamarin prover</a>, a
+          well-established protocol analyser that does not support quantitative notions such as time. The Tidy prover
+          uses its own (rich, typed, and timed) language, compiles it into a Tamarin specification. It then handles
+          various rounds of interaction with Tamarin to construct an analysis of time-based protocols soundly.
+        </p>
+      </div>
+      <div class="resume-date text-md-right">
+        <span class="text-primary">started in 2022</span>
+      </div>
+    </div>
+
+    <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+      <div class="resume-content">
+        <h3 class="mb-0"><img src="img/deepsec-logo.png" alt="logo" height="30" style="margin-bottom:7px"><span
+            style="margin-left:20px">The DeepSec prover</span></h3>
         <div class="subheading mb-3">A push-button tool for analysing privacy in security protocols</div>
         <button onclick="toggleswitch('Deepsec-par')">Show / Hide</button>
         <p class="my-paragraph" id="Deepsec-par" style="display:none">
-          <a href="https://deepsec-prover.github.io/">DeepSec</a> (not the smartest name due to all of the homonyms and paronyms...) is the project I have contributed the most to.
-          This tool was designed as a successor of <a href="https://projects.lsv.ens-cachan.fr/APTE/">APTE</a>, analysing privacy-type properties in security protocols with better performances and scope.
-          I joined the crew during my thesis and helped shaping the theory behind the tool, and contributed to the design and  implementation of optimisation techniques that are now integrated.
+          <a href="https://deepsec-prover.github.io/">DeepSec</a> (not the smartest name due to all of the homonyms and
+          paronyms...) is a project contributed a lot during my thesis and the following years.
+          This tool was designed as an analysor of privacy-type properties in security protocols with better
+          performances and scope than its competitor at the time.
+          I typically helped shaping the theory behind the tool, and contributed to the
+          design and implementation of optimisation techniques that are now integrated.
           <br>
           <br>
-          I happened to record my PhD defence, which includes a 5min demo of the tool's interface (see the extract below).
+          I happened to record my PhD defence, which includes a 5min demo of the tool's interface (see the extract
+          below).
           <br>
           <br>
-          <iframe src="https://www.youtube.com/embed/ul4SAjpHitw?start=981&end=1245"
-            title="DeepSec" frameborder="0" class="center"
+          <iframe src="https://www.youtube.com/embed/ul4SAjpHitw?start=981&end=1245" title="DeepSec" frameborder="0"
+            class="center"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </p>
@@ -34,11 +64,14 @@
 
     <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
       <div class="resume-content">
-        <h3 class="mb-0"><img src="img/everest-logo.png" alt="logo" height="35" style="margin-bottom:7px"><span style="margin-left:20px">The Everest Project</span></h3>
+        <h3 class="mb-0"><img src="img/everest-logo.png" alt="logo" height="35" style="margin-bottom:7px"><span
+            style="margin-left:20px">The Everest Project</span></h3>
         <div class="subheading mb-3">A fully verified https stack</div>
         <button onclick="toggleswitch('Everest-par')">Show / Hide</button>
         <p class="my-paragraph" id="Everest-par" style="display:none">
-          This long-term project (<a href="https://project-everest.github.io/">here</a>) carried among others by Microsoft Research and Inria, focuses at producing formally verified implementations of the https ecosystem, mostly using the <a href="https://www.fstar-lang.org/">F*</a> proof assistant.
+          This long-term project (<a href="https://project-everest.github.io/">here</a>) carried among others by
+          Microsoft Research and Inria, focuses at producing formally verified implementations of the https ecosystem,
+          mostly using the <a href="https://www.fstar-lang.org/">F*</a> proof assistant.
           This includes protocols such as TLS but also the IETF version of the QUIC protocol;
           I contributed to proofs of correctness and security of the latter (mostly of its packet encryption) in 2019.
         </p>
@@ -50,47 +83,56 @@
 
     <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
       <div class="resume-content">
-        <h3 class="mb-0"><span><i class="fa fa-lightbulb-o" , style="color:#4076B3;font-size:35px;"></i><span style="margin-left:20px">Scientific popularisation</span></h3>
+        <h3 class="mb-0"><span><i class="fa fa-lightbulb-o" , style="color:#4076B3;font-size:35px;"></i><span
+              style="margin-left:20px">Scientific popularisation</span></h3>
         <div class="subheading mb-3">Hey Grandpa, this time *<b>I</b>* will tell you a story</div>
         <button onclick="toggleswitch('Mediation-par')">Show / Hide</button>
         <div id="Mediation-par" style="display:none">
           <p class="my-paragraph">
-            I have always liked to (try to) explain technical things in non-technical terms, which encouraged me to participate to various popularisation projects since the beginning of my thesis.
+            I have always liked to (try to) explain technical things in non-technical terms, which encouraged me to
+            participate to various popularisation projects since the beginning of my thesis.
 
-            <ul style="text-align:justify">
-              <li>
-                I participated to <a href="https://mt180.fr/"><em>Ma thèse en 180 secondes</em></a> (My thesis in 180 seconds), the French iteration of a
-                competition where PhD students present the challenges and contributions of their ongoing thesis to a broad audience in
-                a limited time.
-                You can see a live recording of my speech below (in French):
-              </li>
-            </ul>
+          <ul style="text-align:justify">
+            <li>
+              I participated to <a href="https://mt180.fr/"><em>Ma thèse en 180 secondes</em></a> (My thesis in 180
+              seconds), the French iteration of a
+              competition where PhD students present the challenges and contributions of their ongoing thesis to a broad
+              audience in
+              a limited time.
+              You can see a live recording of my speech below (in French):
+            </li>
+          </ul>
 
-            <iframe src="https://www.youtube.com/embed/wdNIF0g09u8?start=21" title="MT180" frameborder="0" class="center"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-            <br>
+          <iframe src="https://www.youtube.com/embed/wdNIF0g09u8?start=21" title="MT180" frameborder="0" class="center"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <br>
 
-            <ul style="text-align:justify">
-              <li>
-                Alongside with <a href="https://members.loria.fr/VCortier/">Véronique Cortier</a>, I also contributed to an activity explaining the challenges and daily-life implications of security protocols.
-                This takes the form of an interactive riddle that targets audiences from children (we implemented it in a junior school in France) to curious adults (even researchers of other fields).
+          <ul style="text-align:justify">
+            <li>
+              Alongside with <a href="https://members.loria.fr/VCortier/">Véronique Cortier</a>, I also contributed to
+              an activity explaining the challenges and daily-life implications of security protocols.
+              This takes the form of an interactive riddle that targets audiences from children (we implemented it in a
+              junior school in France) to curious adults (even researchers of other fields).
 
-                <br><br>
-                <div class="row">
-                  <div class="column">
-                    <img src="img/mediation1.jpg" alt="the riddle material" style="width:100%">
-                  </div>
-                  <div class="column">
-                    <img src="img/mediation2.jpg" alt="children at work" style="width:100%">
-                  </div>
+              <br><br>
+              <div class="row">
+                <div class="column">
+                  <img src="img/mediation1.jpg" alt="the riddle material" style="width:100%">
                 </div>
-                <!-- <img src="img/mediation.jpg" alt="teaching security protocols to children" class="center" height="200"> -->
-                <br><br>
-                We have also written a short paper (<a href="docs/21-guttman.pdf">How to explain security protocols to your children?</a>) to describe to other experts how they can deploy the activity themselves.
-                A more detailed version, discussing in addition material questions and providing technical exercises to train a non-expert (math-teacher) animator, <a href="docs/crypto_teacher_training.pdf">also exists</a> (currently only in French).
-              </li>
-            </ul>
+                <div class="column">
+                  <img src="img/mediation2.jpg" alt="children at work" style="width:100%">
+                </div>
+              </div>
+              <!-- <img src="img/mediation.jpg" alt="teaching security protocols to children" class="center" height="200"> -->
+              <br><br>
+              We have also written a short paper (<a href="docs/21-guttman.pdf">How to explain security protocols to
+                your children?</a>) to describe to other experts how they can deploy the activity themselves.
+              A more detailed version, discussing in addition material questions and providing technical exercises to
+              train a non-expert (math-teacher) animator, <a href="docs/crypto_teacher_training.pdf">also exists</a>
+              (currently only in French).
+            </li>
+          </ul>
           </p>
         </div>
       </div>
