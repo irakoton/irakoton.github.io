@@ -1,4 +1,4 @@
-#!/usr/local/bin/fish
+#!/usr/bin/env fish
 
 function genheaders -a FILE
   cat sources_html/file_head.html $FILE sources_html/file_tail.html
